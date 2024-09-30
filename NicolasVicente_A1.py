@@ -114,8 +114,6 @@ classifierSVM = svm.LinearSVC()
 classifierSVM.fit(X_train, y_train)
 SVM_predictions = classifierSVM.predict(X_test)
 print("SVM Test set score: {:.2f}".format(accuracy_score(y_test, SVM_predictions)))
-pd.set_option("display.max_rows", None)  # Show all rows
-pd.set_option("display.max_columns", None)  # Show all columns
 
 
 
